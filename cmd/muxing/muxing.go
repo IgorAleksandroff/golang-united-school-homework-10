@@ -48,7 +48,7 @@ func getParam(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	w.WriteHeader(http.StatusOK)
 
-	fmt.Fprintf(w, "Hello, %v", vars["PARAM"])
+	fmt.Fprintf(w, "Hello, %v!", vars["PARAM"])
 }
 
 func getBad(w http.ResponseWriter, r *http.Request) {
