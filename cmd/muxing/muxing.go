@@ -9,6 +9,7 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
+	_ "github.com/stretchr/testify"
 )
 
 /**
