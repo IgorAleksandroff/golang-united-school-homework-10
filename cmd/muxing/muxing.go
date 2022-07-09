@@ -77,6 +77,6 @@ func postHeaders(w http.ResponseWriter, r *http.Request) {
 		ans += intValue
 	}
 
-	w.Header().Set("a+b", string(ans))
+	w.Header().Set("a+b", fmt.Sprint(ans))
 	w.WriteHeader(http.StatusOK)
 }
